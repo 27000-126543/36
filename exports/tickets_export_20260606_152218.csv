@@ -1,0 +1,1511 @@
+﻿id,title,priority,status,difficulty,department,asset_owner,ip,hostname,os,assignee,assignee_email,created_at,assigned_at,started_at,completed_at,escalated_at,reminder_count,description
+1,[HIGH] 10.0.3.20 - Jenkins 远程代码执行漏洞,high,pending,medium,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.043859,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2025-93258
+风险评分: 76.75
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+2,[HIGH] 10.0.6.10 - Jenkins 远程代码执行漏洞,high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044106,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2025-93258
+风险评分: 62.75
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+3,[HIGH] 10.0.3.10 - Jenkins 远程代码执行漏洞,high,pending,medium,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044117,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2025-93258
+风险评分: 70.75
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+4,[CRITICAL] 10.0.5.20 - Jenkins 远程代码执行漏洞,urgent,pending,hard,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044125,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2025-93258
+风险评分: 89.75
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+5,[HIGH] 10.0.5.10 - Jenkins 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044132,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2025-93258
+风险评分: 74.75
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+6,[MEDIUM] 10.0.6.10 - Jenkins 远程代码执行漏洞,medium,pending,easy,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044139,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2023-42809
+风险评分: 50.85
+修复难度: easy
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+7,[HIGH] 10.0.5.20 - Jenkins 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044145,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2023-42809
+风险评分: 67.85
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+8,[MEDIUM] 10.0.4.10 - Jenkins 远程代码执行漏洞,medium,pending,easy,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044151,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2023-42809
+风险评分: 51.85
+修复难度: easy
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+9,[HIGH] 10.0.1.20 - Jenkins 远程代码执行漏洞,high,pending,medium,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044157,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2023-42809
+风险评分: 62.85
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 李DBA (lidba@company.com)"
+10,[CRITICAL] 10.0.1.10 - Jenkins 远程代码执行漏洞,urgent,pending,hard,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044192,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2023-42809
+风险评分: 82.85
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+11,[CRITICAL] 10.0.1.11 - Jenkins 远程代码执行漏洞,urgent,pending,hard,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044235,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2023-42809
+风险评分: 82.85
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+12,[HIGH] 10.0.2.10 - Jenkins 远程代码执行漏洞,high,pending,medium,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044244,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2023-42809
+风险评分: 69.85
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+13,[HIGH] 10.0.5.10 - Jenkins 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044251,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2023-42809
+风险评分: 67.85
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+14,[HIGH] 10.0.1.11 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044262,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2023-84731
+风险评分: 78.0
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+15,[CRITICAL] 10.0.1.10 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044268,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2023-84731
+风险评分: 93.0
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+16,[CRITICAL] 10.0.3.20 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044273,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2023-84731
+风险评分: 85.0
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+17,[HIGH] 10.0.6.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044279,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2023-84731
+风险评分: 76.0
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+18,[HIGH] 10.0.3.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044309,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2023-84731
+风险评分: 79.0
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+19,[HIGH] 10.0.2.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044325,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2023-84731
+风险评分: 65.0
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+20,[CRITICAL] 10.0.5.20 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044334,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2023-84731
+风险评分: 83.0
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+21,[HIGH] 10.0.1.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044342,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2026-16091
+风险评分: 70.3
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+22,[HIGH] 10.0.3.20 - Kubernetes API Server 权限提升漏洞,high,pending,medium,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044348,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2026-16091
+风险评分: 72.3
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+23,[CRITICAL] 10.0.5.10 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044354,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2026-16091
+风险评分: 85.3
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+24,[HIGH] 10.0.3.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044360,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2026-16091
+风险评分: 71.3
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+25,[HIGH] 10.0.5.20 - Kubernetes API Server 权限提升漏洞,high,pending,medium,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044367,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2026-16091
+风险评分: 70.3
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+26,[MEDIUM] 10.0.2.10 - Kubernetes API Server 权限提升漏洞,medium,pending,easy,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044373,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2026-16091
+风险评分: 57.3
+修复难度: easy
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+27,[CRITICAL] 10.0.1.20 - Spring Framework RCE 漏洞 (Spring4Shell),urgent,pending,hard,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044380,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2024-31844
+风险评分: 87.55
+修复难度: hard
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 李DBA (lidba@company.com)"
+28,[CRITICAL] 10.0.3.10 - Spring Framework RCE 漏洞 (Spring4Shell),urgent,pending,hard,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044388,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2024-31844
+风险评分: 93.55
+修复难度: hard
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+29,[HIGH] 10.0.3.20 - Spring Framework RCE 漏洞 (Spring4Shell),high,pending,medium,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044394,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2024-31844
+风险评分: 74.55
+修复难度: medium
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+30,[CRITICAL] 10.0.5.10 - Spring Framework RCE 漏洞 (Spring4Shell),urgent,pending,hard,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044400,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2024-31844
+风险评分: 92.55
+修复难度: hard
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+31,[CRITICAL] 10.0.2.20 - Spring Framework RCE 漏洞 (Spring4Shell),urgent,pending,hard,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044405,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2024-31844
+风险评分: 80.55
+修复难度: hard
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+32,[CRITICAL] 10.0.4.10 - Spring Framework RCE 漏洞 (Spring4Shell),urgent,pending,hard,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044411,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2024-31844
+风险评分: 81.55
+修复难度: hard
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+33,[CRITICAL] 10.0.1.11 - Spring Framework RCE 漏洞 (Spring4Shell),urgent,pending,hard,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044420,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2024-31844
+风险评分: 87.55
+修复难度: hard
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+34,[CRITICAL] 10.0.1.10 - Spring Framework RCE 漏洞 (Spring4Shell),urgent,pending,hard,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044426,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2024-31844
+风险评分: 82.55
+修复难度: hard
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+35,[CRITICAL] 10.0.6.20 - Spring Framework RCE 漏洞 (Spring4Shell),urgent,pending,hard,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044431,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2024-31844
+风险评分: 88.55
+修复难度: hard
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+36,[CRITICAL] 10.0.5.20 - Spring Framework RCE 漏洞 (Spring4Shell),urgent,pending,hard,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044438,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2024-31844
+风险评分: 92.55
+修复难度: hard
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+37,[HIGH] 10.0.6.10 - Spring Framework RCE 漏洞 (Spring4Shell),high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044444,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2024-31844
+风险评分: 70.55
+修复难度: medium
+
+漏洞描述:
+Spring Framework 存在远程代码执行漏洞，影响使用 Spring Boot 打包部署的 JDK9+ 应用。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+38,[HIGH] 10.0.4.10 - Jenkins 远程代码执行漏洞,high,pending,medium,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044449,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2023-6032
+风险评分: 69.1
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+39,[HIGH] 10.0.6.10 - Jenkins 远程代码执行漏洞,high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044455,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2023-6032
+风险评分: 73.1
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+40,[CRITICAL] 10.0.2.10 - Jenkins 远程代码执行漏洞,urgent,pending,hard,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044460,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2023-6032
+风险评分: 82.1
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+41,[CRITICAL] 10.0.1.11 - Jenkins 远程代码执行漏洞,urgent,pending,hard,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044466,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2023-6032
+风险评分: 80.1
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+42,[CRITICAL] 10.0.3.20 - Jenkins 远程代码执行漏洞,urgent,pending,hard,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044471,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2023-6032
+风险评分: 82.1
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+43,[HIGH] 10.0.3.10 - Jenkins 远程代码执行漏洞,high,pending,medium,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044476,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2023-6032
+风险评分: 76.1
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+44,[CRITICAL] 10.0.5.10 - Jenkins 远程代码执行漏洞,urgent,pending,hard,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044481,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2023-6032
+风险评分: 95.1
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+45,[CRITICAL] 10.0.6.20 - Jenkins 远程代码执行漏洞,urgent,pending,hard,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044487,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2023-6032
+风险评分: 86.1
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+46,[HIGH] 10.0.2.20 - Jenkins 远程代码执行漏洞,high,pending,medium,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044492,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2023-6032
+风险评分: 63.1
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+47,[HIGH] 10.0.1.10 - Jenkins 远程代码执行漏洞,high,pending,medium,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044497,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2023-6032
+风险评分: 75.1
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+48,[CRITICAL] 10.0.1.20 - Jenkins 远程代码执行漏洞,urgent,pending,hard,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044503,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2023-6032
+风险评分: 80.1
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 李DBA (lidba@company.com)"
+49,[HIGH] 10.0.5.20 - Jenkins 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044508,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2023-6032
+风险评分: 75.1
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+50,[HIGH] 10.0.6.20 - Redis 未授权访问漏洞,high,pending,medium,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044513,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2024-14232
+风险评分: 64.1
+修复难度: medium
+
+漏洞描述:
+Redis 默认配置存在未授权访问，攻击者可写入 SSH 公钥获取服务器权限。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+51,[HIGH] 10.0.4.10 - Redis 未授权访问漏洞,high,pending,medium,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044519,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2024-14232
+风险评分: 67.1
+修复难度: medium
+
+漏洞描述:
+Redis 默认配置存在未授权访问，攻击者可写入 SSH 公钥获取服务器权限。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+52,[CRITICAL] 10.0.1.20 - Jenkins 远程代码执行漏洞,urgent,pending,hard,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044524,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2023-73435
+风险评分: 82.9
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 李DBA (lidba@company.com)"
+53,[HIGH] 10.0.3.20 - Jenkins 远程代码执行漏洞,high,pending,medium,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044530,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2023-73435
+风险评分: 74.9
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+54,[HIGH] 10.0.4.10 - Jenkins 远程代码执行漏洞,high,pending,medium,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044536,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2023-73435
+风险评分: 76.9
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+55,[CRITICAL] 10.0.5.20 - Jenkins 远程代码执行漏洞,urgent,pending,hard,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044541,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2023-73435
+风险评分: 87.9
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+56,[HIGH] 10.0.2.20 - Jenkins 远程代码执行漏洞,high,pending,medium,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044546,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2023-73435
+风险评分: 75.9
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+57,[MEDIUM] 10.0.3.10 - Jenkins 远程代码执行漏洞,medium,pending,easy,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044552,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2025-99396
+风险评分: 53.25
+修复难度: easy
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+58,[MEDIUM] 10.0.1.20 - Jenkins 远程代码执行漏洞,medium,pending,easy,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044557,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2025-99396
+风险评分: 57.25
+修复难度: easy
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 李DBA (lidba@company.com)"
+59,[HIGH] 10.0.4.10 - Jenkins 远程代码执行漏洞,high,pending,medium,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044563,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2025-99396
+风险评分: 61.25
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+60,[HIGH] 10.0.2.20 - Jenkins 远程代码执行漏洞,high,pending,medium,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044568,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2025-99396
+风险评分: 65.25
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+61,[HIGH] 10.0.2.10 - Jenkins 远程代码执行漏洞,high,pending,medium,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044573,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2025-99396
+风险评分: 64.25
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+62,[MEDIUM] 10.0.5.20 - Jenkins 远程代码执行漏洞,medium,pending,easy,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044578,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2025-99396
+风险评分: 57.25
+修复难度: easy
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+63,[HIGH] 10.0.1.11 - Jenkins 远程代码执行漏洞,high,pending,medium,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044584,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2025-99396
+风险评分: 77.25
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+64,[MEDIUM] 10.0.6.10 - Jenkins 远程代码执行漏洞,medium,pending,easy,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044589,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2025-99396
+风险评分: 50.25
+修复难度: easy
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+65,[HIGH] 10.0.1.10 - Jenkins 远程代码执行漏洞,high,pending,medium,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044595,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2025-99396
+风险评分: 67.25
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+66,[MEDIUM] 10.0.6.20 - Jenkins 远程代码执行漏洞,medium,pending,easy,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044600,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2025-99396
+风险评分: 58.25
+修复难度: easy
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+67,[HIGH] 10.0.5.10 - Jenkins 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044605,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2025-99396
+风险评分: 67.25
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+68,[CRITICAL] 10.0.1.20 - Jenkins 远程代码执行漏洞,urgent,pending,hard,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044610,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2023-25713
+风险评分: 81.0
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 李DBA (lidba@company.com)"
+69,[HIGH] 10.0.5.10 - Jenkins 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044615,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2023-25713
+风险评分: 76.0
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+70,[CRITICAL] 10.0.1.10 - Jenkins 远程代码执行漏洞,urgent,pending,hard,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044620,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2023-25713
+风险评分: 81.0
+修复难度: hard
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+71,[HIGH] 10.0.2.20 - Jenkins 远程代码执行漏洞,high,pending,medium,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044625,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2023-25713
+风险评分: 69.0
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+72,[HIGH] 10.0.6.10 - Jenkins 远程代码执行漏洞,high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044636,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2023-25713
+风险评分: 74.0
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+73,[HIGH] 10.0.5.20 - Kubernetes API Server 权限提升漏洞,high,pending,medium,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044642,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2024-76653
+风险评分: 72.6
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+74,[MEDIUM] 10.0.2.20 - Kubernetes API Server 权限提升漏洞,medium,pending,easy,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044647,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2024-76653
+风险评分: 50.6
+修复难度: easy
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+75,[HIGH] 10.0.6.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044652,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2024-76653
+风险评分: 65.6
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+76,[HIGH] 10.0.1.11 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044658,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2024-76653
+风险评分: 62.6
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+77,[HIGH] 10.0.1.20 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044663,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2024-76653
+风险评分: 77.6
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 李DBA (lidba@company.com)"
+78,[MEDIUM] 10.0.3.20 - Kubernetes API Server 权限提升漏洞,medium,pending,easy,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044669,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2024-76653
+风险评分: 49.6
+修复难度: easy
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+79,[HIGH] 10.0.1.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044674,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2024-76653
+风险评分: 62.6
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+80,[HIGH] 10.0.6.20 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044679,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2024-76653
+风险评分: 63.6
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+81,[HIGH] 10.0.3.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044685,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2024-76653
+风险评分: 73.6
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+82,[MEDIUM] 10.0.2.10 - Kubernetes API Server 权限提升漏洞,medium,pending,easy,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044690,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2024-76653
+风险评分: 49.6
+修复难度: easy
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+83,[MEDIUM] 10.0.4.10 - Kubernetes API Server 权限提升漏洞,medium,pending,easy,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044695,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2024-76653
+风险评分: 46.6
+修复难度: easy
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+84,[HIGH] 10.0.2.20 - Nginx 目录遍历漏洞,high,pending,medium,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044700,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2022-46233
+风险评分: 60.15
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+85,[MEDIUM] 10.0.6.10 - Nginx 目录遍历漏洞,medium,pending,easy,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044705,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2022-46233
+风险评分: 55.15
+修复难度: easy
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+86,[HIGH] 10.0.5.20 - Nginx 目录遍历漏洞,high,pending,medium,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044710,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2022-46233
+风险评分: 72.15
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+87,[MEDIUM] 10.0.3.20 - Nginx 目录遍历漏洞,medium,pending,easy,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044716,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2022-46233
+风险评分: 54.15
+修复难度: easy
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+88,[MEDIUM] 10.0.2.10 - Nginx 目录遍历漏洞,medium,pending,easy,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044721,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2022-46233
+风险评分: 59.15
+修复难度: easy
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+89,[HIGH] 10.0.1.11 - Nginx 目录遍历漏洞,high,pending,medium,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044726,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2022-46233
+风险评分: 62.15
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+90,[HIGH] 10.0.1.10 - Nginx 目录遍历漏洞,high,pending,medium,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044732,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2022-46233
+风险评分: 72.15
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+91,[HIGH] 10.0.3.10 - Nginx 目录遍历漏洞,high,pending,medium,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044737,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2022-46233
+风险评分: 73.15
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+92,[MEDIUM] 10.0.4.10 - Nginx 目录遍历漏洞,medium,pending,easy,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044742,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2022-46233
+风险评分: 56.15
+修复难度: easy
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+93,[HIGH] 10.0.5.10 - Nginx 目录遍历漏洞,high,pending,medium,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044747,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2022-46233
+风险评分: 62.15
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+94,[HIGH] 10.0.1.20 - Nginx 目录遍历漏洞,high,pending,medium,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044752,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2022-46233
+风险评分: 77.15
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 李DBA (lidba@company.com)"
+95,[HIGH] 10.0.3.20 - Nginx 目录遍历漏洞,high,pending,medium,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044758,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2026-13792
+风险评分: 60.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+96,[HIGH] 10.0.1.10 - Nginx 目录遍历漏洞,high,pending,medium,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044763,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2026-13792
+风险评分: 68.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+97,[HIGH] 10.0.1.11 - Nginx 目录遍历漏洞,high,pending,medium,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044768,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2026-13792
+风险评分: 78.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+98,[HIGH] 10.0.6.10 - Nginx 目录遍历漏洞,high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044774,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2026-13792
+风险评分: 76.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+99,[HIGH] 10.0.5.20 - Nginx 目录遍历漏洞,high,pending,medium,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044779,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2026-13792
+风险评分: 68.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+100,[HIGH] 10.0.2.20 - Nginx 目录遍历漏洞,high,pending,medium,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044784,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2026-13792
+风险评分: 61.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+101,[HIGH] 10.0.3.10 - Nginx 目录遍历漏洞,high,pending,medium,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044789,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2026-13792
+风险评分: 69.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+102,[HIGH] 10.0.1.20 - Nginx 目录遍历漏洞,high,pending,medium,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044794,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2026-13792
+风险评分: 78.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 李DBA (lidba@company.com)"
+103,[HIGH] 10.0.2.10 - Nginx 目录遍历漏洞,high,pending,medium,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044799,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2026-13792
+风险评分: 60.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+104,[HIGH] 10.0.6.20 - Nginx 目录遍历漏洞,high,pending,medium,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044804,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2026-13792
+风险评分: 74.1
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+105,[MEDIUM] 10.0.2.10 - Django SQL 注入漏洞,medium,pending,easy,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044810,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2024-11119
+风险评分: 51.7
+修复难度: easy
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+106,[HIGH] 10.0.5.10 - Django SQL 注入漏洞,high,pending,medium,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044815,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2024-11119
+风险评分: 79.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+107,[HIGH] 10.0.3.10 - Django SQL 注入漏洞,high,pending,medium,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044823,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2024-11119
+风险评分: 65.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+108,[MEDIUM] 10.0.3.20 - Django SQL 注入漏洞,medium,pending,easy,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044828,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2024-11119
+风险评分: 51.7
+修复难度: easy
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+109,[HIGH] 10.0.4.10 - Django SQL 注入漏洞,high,pending,medium,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044834,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2024-11119
+风险评分: 63.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+110,[HIGH] 10.0.6.20 - Django SQL 注入漏洞,high,pending,medium,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044840,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2024-11119
+风险评分: 65.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+111,[HIGH] 10.0.1.20 - Django SQL 注入漏洞,high,pending,medium,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044845,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2024-11119
+风险评分: 69.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 李DBA (lidba@company.com)"
+112,[HIGH] 10.0.1.11 - Django SQL 注入漏洞,high,pending,medium,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044850,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2024-11119
+风险评分: 79.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+113,[MEDIUM] 10.0.6.10 - Django SQL 注入漏洞,medium,pending,easy,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044855,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2024-11119
+风险评分: 47.7
+修复难度: easy
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+114,[HIGH] 10.0.6.20 - Struts2 远程代码执行漏洞,high,pending,medium,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044860,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2024-32328
+风险评分: 67.8
+修复难度: medium
+
+漏洞描述:
+Apache Struts2 存在多个远程代码执行漏洞，攻击者可构造恶意请求执行任意命令。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+115,[HIGH] 10.0.5.10 - Struts2 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044866,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2024-32328
+风险评分: 66.8
+修复难度: medium
+
+漏洞描述:
+Apache Struts2 存在多个远程代码执行漏洞，攻击者可构造恶意请求执行任意命令。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+116,[HIGH] 10.0.5.20 - Struts2 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044872,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2024-32328
+风险评分: 76.8
+修复难度: medium
+
+漏洞描述:
+Apache Struts2 存在多个远程代码执行漏洞，攻击者可构造恶意请求执行任意命令。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+117,[MEDIUM] 10.0.2.10 - Struts2 远程代码执行漏洞,medium,pending,easy,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044877,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2024-32328
+风险评分: 53.8
+修复难度: easy
+
+漏洞描述:
+Apache Struts2 存在多个远程代码执行漏洞，攻击者可构造恶意请求执行任意命令。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+118,[HIGH] 10.0.5.10 - Jenkins 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044882,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2025-33697
+风险评分: 69.5
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+119,[HIGH] 10.0.5.20 - Jenkins 远程代码执行漏洞,high,pending,medium,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044888,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2025-33697
+风险评分: 69.5
+修复难度: medium
+
+漏洞描述:
+Jenkins CLI 存在反序列化漏洞，攻击者可执行任意代码。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+120,[HIGH] 10.0.3.20 - Django SQL 注入漏洞,high,pending,medium,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044893,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2025-18396
+风险评分: 63.25
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+121,[CRITICAL] 10.0.5.10 - Django SQL 注入漏洞,urgent,pending,hard,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044899,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2025-18396
+风险评分: 91.25
+修复难度: hard
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+122,[HIGH] 10.0.6.20 - Django SQL 注入漏洞,high,pending,medium,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.044905,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2025-18396
+风险评分: 77.25
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+123,[CRITICAL] 10.0.2.10 - Django SQL 注入漏洞,urgent,pending,hard,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045111,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2025-18396
+风险评分: 83.25
+修复难度: hard
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+124,[CRITICAL] 10.0.1.10 - Django SQL 注入漏洞,urgent,pending,hard,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045118,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2025-18396
+风险评分: 81.25
+修复难度: hard
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+125,[HIGH] 10.0.4.10 - Django SQL 注入漏洞,high,pending,medium,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045124,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2025-18396
+风险评分: 65.25
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+126,[CRITICAL] 10.0.1.20 - Django SQL 注入漏洞,urgent,pending,hard,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045129,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2025-18396
+风险评分: 81.25
+修复难度: hard
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 李DBA (lidba@company.com)"
+127,[MEDIUM] 10.0.2.20 - Django SQL 注入漏洞,medium,pending,easy,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045134,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2025-18396
+风险评分: 59.25
+修复难度: easy
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+128,[HIGH] 10.0.6.10 - Django SQL 注入漏洞,high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045140,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2025-18396
+风险评分: 69.25
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+129,[HIGH] 10.0.1.20 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045146,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2026-47575
+风险评分: 77.3
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 李DBA (lidba@company.com)"
+130,[HIGH] 10.0.4.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,市场部,周运营,10.0.4.10,market-web,Ubuntu 20.04,周运营,zhouyunying@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045151,,,,0,"资产: 10.0.4.10 (market-web)
+部门: 市场部
+漏洞编号: CVE-2026-47575
+风险评分: 76.3
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 周运营 (zhouyunying@company.com)"
+131,[HIGH] 10.0.3.20 - Kubernetes API Server 权限提升漏洞,high,pending,medium,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045156,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2026-47575
+风险评分: 64.3
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+132,[CRITICAL] 10.0.6.20 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045162,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2026-47575
+风险评分: 83.3
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+133,[CRITICAL] 10.0.5.10 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045167,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2026-47575
+风险评分: 82.3
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+134,[CRITICAL] 10.0.2.10 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045175,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2026-47575
+风险评分: 84.3
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+135,[CRITICAL] 10.0.1.10 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045180,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2026-47575
+风险评分: 82.3
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+136,[HIGH] 10.0.2.20 - Kubernetes API Server 权限提升漏洞,high,pending,medium,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045186,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2026-47575
+风险评分: 60.3
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+137,[CRITICAL] 10.0.5.20 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,财务部,吴会计,10.0.5.20,finance-db,Windows Server 2019,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045191,,,,0,"资产: 10.0.5.20 (finance-db)
+部门: 财务部
+漏洞编号: CVE-2026-47575
+风险评分: 82.3
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+138,[CRITICAL] 10.0.3.10 - Kubernetes API Server 权限提升漏洞,urgent,pending,hard,运维部,赵运维,10.0.3.10,mail-server,CentOS 8,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045196,,,,0,"资产: 10.0.3.10 (mail-server)
+部门: 运维部
+漏洞编号: CVE-2026-47575
+风险评分: 88.3
+修复难度: hard
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"
+139,[HIGH] 10.0.6.10 - Kubernetes API Server 权限提升漏洞,high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045201,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2026-47575
+风险评分: 70.3
+修复难度: medium
+
+漏洞描述:
+K8s API Server 存在权限提升漏洞，普通用户可获取集群管理员权限。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+140,[HIGH] 10.0.1.20 - Django SQL 注入漏洞,high,pending,medium,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045206,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2024-11065
+风险评分: 71.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 李DBA (lidba@company.com)"
+141,[HIGH] 10.0.2.10 - Django SQL 注入漏洞,high,pending,medium,技术部,王后端,10.0.2.10,app-api-01,Ubuntu 22.04,王后端,wanghoud@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045211,,,,0,"资产: 10.0.2.10 (app-api-01)
+部门: 技术部
+漏洞编号: CVE-2024-11065
+风险评分: 73.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 王后端 (wanghoud@company.com)"
+142,[HIGH] 10.0.3.20 - Django SQL 注入漏洞,high,pending,medium,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045217,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2024-11065
+风险评分: 78.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+143,[HIGH] 10.0.6.20 - Django SQL 注入漏洞,high,pending,medium,技术部,郑开发,10.0.6.20,gitlab-server,Ubuntu 22.04,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045222,,,,0,"资产: 10.0.6.20 (gitlab-server)
+部门: 技术部
+漏洞编号: CVE-2024-11065
+风险评分: 77.7
+修复难度: medium
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+144,[CRITICAL] 10.0.1.10 - Django SQL 注入漏洞,urgent,pending,hard,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045227,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2024-11065
+风险评分: 86.7
+修复难度: hard
+
+漏洞描述:
+Django ORM 在特定查询下存在 SQL 注入漏洞。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+145,[MEDIUM] 10.0.1.20 - Nginx 目录遍历漏洞,medium,pending,easy,技术部,李DBA,10.0.1.20,db-prod-01,Ubuntu 20.04,李DBA,lidba@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045232,,,,0,"资产: 10.0.1.20 (db-prod-01)
+部门: 技术部
+漏洞编号: CVE-2025-76830
+风险评分: 56.55
+修复难度: easy
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 李DBA (lidba@company.com)"
+146,[HIGH] 10.0.6.10 - Nginx 目录遍历漏洞,high,pending,medium,技术部,郑开发,10.0.6.10,jenkins-ci,CentOS 7,郑开发,zhengkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045238,,,,0,"资产: 10.0.6.10 (jenkins-ci)
+部门: 技术部
+漏洞编号: CVE-2025-76830
+风险评分: 64.55
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 郑开发 (zhengkaifa@company.com)"
+147,[HIGH] 10.0.1.10 - Nginx 目录遍历漏洞,high,pending,medium,技术部,张开发,10.0.1.10,web-prod-01,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045243,,,,0,"资产: 10.0.1.10 (web-prod-01)
+部门: 技术部
+漏洞编号: CVE-2025-76830
+风险评分: 71.55
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+148,[HIGH] 10.0.3.20 - Nginx 目录遍历漏洞,high,pending,medium,运维部,孙运维,10.0.3.20,file-server,Windows Server 2019,孙运维,sunyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045248,,,,0,"资产: 10.0.3.20 (file-server)
+部门: 运维部
+漏洞编号: CVE-2025-76830
+风险评分: 68.55
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 孙运维 (sunyunwei@company.com)"
+149,[HIGH] 10.0.5.10 - Nginx 目录遍历漏洞,high,pending,medium,财务部,吴会计,10.0.5.10,finance-erp,Windows Server 2016,吴会计,wukuaiji@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045254,,,,0,"资产: 10.0.5.10 (finance-erp)
+部门: 财务部
+漏洞编号: CVE-2025-76830
+风险评分: 61.55
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 吴会计 (wukuaiji@company.com)"
+150,[HIGH] 10.0.1.11 - Nginx 目录遍历漏洞,high,pending,medium,技术部,张开发,10.0.1.11,web-prod-02,CentOS 7,张开发,zhangkaifa@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045259,,,,0,"资产: 10.0.1.11 (web-prod-02)
+部门: 技术部
+漏洞编号: CVE-2025-76830
+风险评分: 76.55
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 张开发 (zhangkaifa@company.com)"
+151,[HIGH] 10.0.2.20 - Nginx 目录遍历漏洞,high,pending,medium,运维部,赵运维,10.0.2.20,cache-redis-01,Debian 11,赵运维,zhaoyunwei@company.com,2026-06-06 07:22:18,2026-06-06T15:22:18.045264,,,,0,"资产: 10.0.2.20 (cache-redis-01)
+部门: 运维部
+漏洞编号: CVE-2025-76830
+风险评分: 64.55
+修复难度: medium
+
+漏洞描述:
+Nginx 在特定配置下存在目录遍历漏洞，攻击者可读取敏感文件。
+
+资产负责人: 赵运维 (zhaoyunwei@company.com)"

@@ -1,0 +1,133 @@
+{
+  "incident_no": "INC-20260606-0019",
+  "title": "[MEDIUM] Unauthorized Access - 10.0.6.14",
+  "incident_type": "Unauthorized Access",
+  "severity": "medium",
+  "analyst": "李四",
+  "status": "resolved",
+  "created_at": "2026-06-06 07:22:18",
+  "resolved_at": "2026-06-06T15:22:18.101384",
+  "description": "告警来源: MockIDS\n告警类型: Unauthorized Access\n严重级别: medium\n源地址: 106.108.210.124\n目标: 10.0.6.14:8080\n告警时间: 2026-06-05T22:24:18.053383\n原始载荷: attack_payload_2102",
+  "affected_assets": "10.0.1.10, 10.0.1.20",
+  "affected_data": "用户登录凭证, 部分数据库记录",
+  "attack_chain": "1. 外部IP扫描端口 -> 2. 利用Web漏洞获取Shell -> 3. 提权至root -> 4. 横向移动至数据库服务器 -> 5. 数据窃取",
+  "mitigation": "已封禁攻击源IP, 重置受影响账户密码, 修补Web漏洞, 部署WAF规则, 升级EDR检测策略",
+  "alerts": [
+    {
+      "id": 19,
+      "alert_source": "MockIDS",
+      "alert_type": "Unauthorized Access",
+      "severity": "medium",
+      "source_ip": "106.108.210.124",
+      "destination_ip": "10.0.6.14",
+      "destination_port": 8080,
+      "payload": "attack_payload_2102",
+      "alert_time": "2026-06-05T22:24:18.053383",
+      "is_false_positive": 0,
+      "false_positive_count": 0,
+      "incident_id": 19,
+      "created_at": "2026-06-06 07:22:18"
+    }
+  ],
+  "login_logs": [
+    {
+      "id": 43,
+      "username": "root",
+      "source_ip": "106.108.210.124",
+      "target_ip": "10.0.6.14",
+      "login_time": "2026-06-05T22:25:52.053383",
+      "success": 0,
+      "raw_log": "SSH login from 106.108.210.124 to 10.0.6.14"
+    }
+  ],
+  "network_flows": [
+    {
+      "id": 70,
+      "source_ip": "106.108.210.124",
+      "source_port": 53658,
+      "destination_ip": "10.0.6.14",
+      "destination_port": 8080,
+      "protocol": "TCP",
+      "bytes_sent": 45599,
+      "bytes_received": 3519,
+      "flow_time": "2026-06-05T22:22:51.053383",
+      "raw_flow": "NetFlow 106.108.210.124 -> 10.0.6.14"
+    },
+    {
+      "id": 71,
+      "source_ip": "106.108.210.124",
+      "source_port": 22908,
+      "destination_ip": "10.0.6.14",
+      "destination_port": 8080,
+      "protocol": "TCP",
+      "bytes_sent": 52069,
+      "bytes_received": 2695,
+      "flow_time": "2026-06-05T22:25:36.053383",
+      "raw_flow": "NetFlow 106.108.210.124 -> 10.0.6.14"
+    },
+    {
+      "id": 72,
+      "source_ip": "106.108.210.124",
+      "source_port": 61488,
+      "destination_ip": "10.0.6.14",
+      "destination_port": 8080,
+      "protocol": "UDP",
+      "bytes_sent": 26756,
+      "bytes_received": 62244,
+      "flow_time": "2026-06-05T22:27:04.053383",
+      "raw_flow": "NetFlow 106.108.210.124 -> 10.0.6.14"
+    }
+  ],
+  "file_changes": [
+    {
+      "id": 18,
+      "host_ip": "10.0.6.14",
+      "file_path": "/var/log/auth.log",
+      "action": "modify",
+      "change_time": "2026-06-05T22:23:49.053383",
+      "file_hash": "sha256:7133855618228573734496758072317173062274591136493658338450951466",
+      "raw_record": "File change on 10.0.6.14"
+    },
+    {
+      "id": 17,
+      "host_ip": "10.0.6.14",
+      "file_path": "/var/log/auth.log",
+      "action": "modify",
+      "change_time": "2026-06-05T22:25:23.053383",
+      "file_hash": "sha256:5696018651097319637686159492455556215002185764526860509903057046",
+      "raw_record": "File change on 10.0.6.14"
+    },
+    {
+      "id": 19,
+      "host_ip": "10.0.6.14",
+      "file_path": "/tmp/backdoor.sh",
+      "action": "modify",
+      "change_time": "2026-06-05T22:25:23.053383",
+      "file_hash": "sha256:7411861803774513193385590024226137862666038581909231190954748447",
+      "raw_record": "File change on 10.0.6.14"
+    }
+  ],
+  "extracted_iocs": [
+    {
+      "id": 33,
+      "ioc_type": "ip",
+      "ioc_value": "106.108.210.124",
+      "source": "incident-INC-20260606-0019",
+      "description": "Unauthorized Access 攻击源IP",
+      "added_by": "李四",
+      "added_at": "2026-06-06 07:22:18",
+      "incident_id": 19
+    },
+    {
+      "id": 34,
+      "ioc_type": "payload",
+      "ioc_value": "attack_payload_2102",
+      "source": "incident-INC-20260606-0019",
+      "description": "Unauthorized Access 恶意载荷特征",
+      "added_by": "李四",
+      "added_at": "2026-06-06 07:22:18",
+      "incident_id": 19
+    }
+  ],
+  "generated_at": "2026-06-06T15:22:18.112426"
+}

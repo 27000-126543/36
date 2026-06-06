@@ -1,0 +1,223 @@
+{
+  "incident_no": "INC-20260606-0020",
+  "title": "[HIGH] Brute Force Login - 10.0.5.16",
+  "incident_type": "Brute Force Login",
+  "severity": "high",
+  "analyst": "李四",
+  "status": "resolved",
+  "created_at": "2026-06-06 07:22:18",
+  "resolved_at": "2026-06-06T15:22:18.099092",
+  "description": "告警来源: MockIDS\n告警类型: Brute Force Login\n严重级别: high\n源地址: 142.32.245.215\n目标: 10.0.5.16:80\n告警时间: 2026-06-06T01:39:18.053389\n原始载荷: attack_payload_1724",
+  "affected_assets": "10.0.1.10, 10.0.1.20",
+  "affected_data": "用户登录凭证, 部分数据库记录",
+  "attack_chain": "1. 外部IP扫描端口 -> 2. 利用Web漏洞获取Shell -> 3. 提权至root -> 4. 横向移动至数据库服务器 -> 5. 数据窃取",
+  "mitigation": "已封禁攻击源IP, 重置受影响账户密码, 修补Web漏洞, 部署WAF规则, 升级EDR检测策略",
+  "alerts": [
+    {
+      "id": 20,
+      "alert_source": "MockIDS",
+      "alert_type": "Brute Force Login",
+      "severity": "high",
+      "source_ip": "142.32.245.215",
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "payload": "attack_payload_1724",
+      "alert_time": "2026-06-06T01:39:18.053389",
+      "is_false_positive": 0,
+      "false_positive_count": 0,
+      "incident_id": 20,
+      "created_at": "2026-06-06 07:22:18"
+    }
+  ],
+  "login_logs": [
+    {
+      "id": 42,
+      "username": "user02",
+      "source_ip": "142.32.245.215",
+      "target_ip": "10.0.5.16",
+      "login_time": "2026-06-06T01:36:58.053389",
+      "success": 1,
+      "raw_log": "SSH login from 142.32.245.215 to 10.0.5.16"
+    },
+    {
+      "id": 41,
+      "username": "test",
+      "source_ip": "142.32.245.215",
+      "target_ip": "10.0.5.16",
+      "login_time": "2026-06-06T01:38:12.053389",
+      "success": 1,
+      "raw_log": "SSH login from 142.32.245.215 to 10.0.5.16"
+    },
+    {
+      "id": 39,
+      "username": "root",
+      "source_ip": "142.32.245.215",
+      "target_ip": "10.0.5.16",
+      "login_time": "2026-06-06T01:38:52.053389",
+      "success": 0,
+      "raw_log": "SSH login from 142.32.245.215 to 10.0.5.16"
+    },
+    {
+      "id": 40,
+      "username": "postgres",
+      "source_ip": "142.32.245.215",
+      "target_ip": "10.0.5.16",
+      "login_time": "2026-06-06T01:43:33.053389",
+      "success": 1,
+      "raw_log": "SSH login from 142.32.245.215 to 10.0.5.16"
+    }
+  ],
+  "network_flows": [
+    {
+      "id": 63,
+      "source_ip": "142.32.245.215",
+      "source_port": 48541,
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "protocol": "UDP",
+      "bytes_sent": 53441,
+      "bytes_received": 47121,
+      "flow_time": "2026-06-06T01:35:43.053389",
+      "raw_flow": "NetFlow 142.32.245.215 -> 10.0.5.16"
+    },
+    {
+      "id": 65,
+      "source_ip": "142.32.245.215",
+      "source_port": 61517,
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "protocol": "UDP",
+      "bytes_sent": 39636,
+      "bytes_received": 29265,
+      "flow_time": "2026-06-06T01:36:23.053389",
+      "raw_flow": "NetFlow 142.32.245.215 -> 10.0.5.16"
+    },
+    {
+      "id": 69,
+      "source_ip": "142.32.245.215",
+      "source_port": 47545,
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "protocol": "TCP",
+      "bytes_sent": 24208,
+      "bytes_received": 21693,
+      "flow_time": "2026-06-06T01:36:43.053389",
+      "raw_flow": "NetFlow 142.32.245.215 -> 10.0.5.16"
+    },
+    {
+      "id": 66,
+      "source_ip": "142.32.245.215",
+      "source_port": 50665,
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "protocol": "TCP",
+      "bytes_sent": 63689,
+      "bytes_received": 21960,
+      "flow_time": "2026-06-06T01:36:52.053389",
+      "raw_flow": "NetFlow 142.32.245.215 -> 10.0.5.16"
+    },
+    {
+      "id": 68,
+      "source_ip": "142.32.245.215",
+      "source_port": 34293,
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "protocol": "TCP",
+      "bytes_sent": 64523,
+      "bytes_received": 34021,
+      "flow_time": "2026-06-06T01:37:43.053389",
+      "raw_flow": "NetFlow 142.32.245.215 -> 10.0.5.16"
+    },
+    {
+      "id": 62,
+      "source_ip": "142.32.245.215",
+      "source_port": 37687,
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "protocol": "UDP",
+      "bytes_sent": 7730,
+      "bytes_received": 27300,
+      "flow_time": "2026-06-06T01:37:45.053389",
+      "raw_flow": "NetFlow 142.32.245.215 -> 10.0.5.16"
+    },
+    {
+      "id": 61,
+      "source_ip": "142.32.245.215",
+      "source_port": 17195,
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "protocol": "TCP",
+      "bytes_sent": 51489,
+      "bytes_received": 2423,
+      "flow_time": "2026-06-06T01:37:59.053389",
+      "raw_flow": "NetFlow 142.32.245.215 -> 10.0.5.16"
+    },
+    {
+      "id": 64,
+      "source_ip": "142.32.245.215",
+      "source_port": 55341,
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "protocol": "UDP",
+      "bytes_sent": 37674,
+      "bytes_received": 45179,
+      "flow_time": "2026-06-06T01:39:03.053389",
+      "raw_flow": "NetFlow 142.32.245.215 -> 10.0.5.16"
+    },
+    {
+      "id": 67,
+      "source_ip": "142.32.245.215",
+      "source_port": 28331,
+      "destination_ip": "10.0.5.16",
+      "destination_port": 80,
+      "protocol": "UDP",
+      "bytes_sent": 65291,
+      "bytes_received": 18907,
+      "flow_time": "2026-06-06T01:40:11.053389",
+      "raw_flow": "NetFlow 142.32.245.215 -> 10.0.5.16"
+    }
+  ],
+  "file_changes": [
+    {
+      "id": 15,
+      "host_ip": "10.0.5.16",
+      "file_path": "/var/www/html/shell.php",
+      "action": "create",
+      "change_time": "2026-06-06T01:43:08.053389",
+      "file_hash": "sha256:1137098660523255146193448235965660771122574243538863594288394514",
+      "raw_record": "File change on 10.0.5.16"
+    },
+    {
+      "id": 16,
+      "host_ip": "10.0.5.16",
+      "file_path": "/var/www/html/shell.php",
+      "action": "create",
+      "change_time": "2026-06-06T01:43:17.053389",
+      "file_hash": "sha256:2528565246883271930596531627039019506979462990624457230743006280",
+      "raw_record": "File change on 10.0.5.16"
+    }
+  ],
+  "extracted_iocs": [
+    {
+      "id": 35,
+      "ioc_type": "ip",
+      "ioc_value": "142.32.245.215",
+      "source": "incident-INC-20260606-0020",
+      "description": "Brute Force Login 攻击源IP",
+      "added_by": "李四",
+      "added_at": "2026-06-06 07:22:18",
+      "incident_id": 20
+    },
+    {
+      "id": 36,
+      "ioc_type": "payload",
+      "ioc_value": "attack_payload_1724",
+      "source": "incident-INC-20260606-0020",
+      "description": "Brute Force Login 恶意载荷特征",
+      "added_by": "李四",
+      "added_at": "2026-06-06 07:22:18",
+      "incident_id": 20
+    }
+  ],
+  "generated_at": "2026-06-06T15:22:18.115219"
+}

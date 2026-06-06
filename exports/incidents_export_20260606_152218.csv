@@ -1,0 +1,21 @@
+﻿id,incident_no,title,incident_type,severity,status,analyst,analyst_email,affected_assets,affected_data,attack_chain,mitigation,created_at,assigned_at,resolved_at
+1,INC-20260606-0001,[HIGH] Brute Force Login - 10.0.6.16,Brute Force Login,high,assigned,张三,zhangsan@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.061335,
+2,INC-20260606-0002,[HIGH] SQL Injection Attempt - 10.0.2.11,SQL Injection Attempt,high,assigned,李四,lisi@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.064844,
+3,INC-20260606-0003,[HIGH] Brute Force Login - 10.0.3.12,Brute Force Login,high,assigned,李四,lisi@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.067890,
+4,INC-20260606-0004,[HIGH] Privilege Escalation - 10.0.1.21,Privilege Escalation,high,assigned,李四,lisi@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.069531,
+5,INC-20260606-0005,[LOW] Port Scan Detected - 10.0.2.21,Port Scan Detected,low,assigned,王五,wangwu@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.071107,
+6,INC-20260606-0006,[CRITICAL] Data Exfiltration Attempt - 10.0.6.13,Data Exfiltration Attempt,critical,assigned,李四,lisi@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.072517,
+7,INC-20260606-0007,[HIGH] SQL Injection Attempt - 10.0.4.23,SQL Injection Attempt,high,assigned,李四,lisi@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.073835,
+8,INC-20260606-0008,[MEDIUM] Unauthorized Access - 10.0.5.13,Unauthorized Access,medium,assigned,张三,zhangsan@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.075809,
+9,INC-20260606-0009,[LOW] Port Scan Detected - 10.0.5.24,Port Scan Detected,low,assigned,张三,zhangsan@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.077283,
+10,INC-20260606-0010,[MEDIUM] DNS Tunneling - 10.0.3.17,DNS Tunneling,medium,assigned,王五,wangwu@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.078562,
+11,INC-20260606-0011,[CRITICAL] Data Exfiltration Attempt - 10.0.4.22,Data Exfiltration Attempt,critical,assigned,李四,lisi@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.079825,
+12,INC-20260606-0012,[LOW] Port Scan Detected - 10.0.4.10,Port Scan Detected,low,assigned,张三,zhangsan@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.081104,
+13,INC-20260606-0013,[MEDIUM] DNS Tunneling - 10.0.4.10,DNS Tunneling,medium,assigned,王五,wangwu@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.082283,
+14,INC-20260606-0014,[MEDIUM] Cross-Site Scripting (XSS) - 10.0.3.15,Cross-Site Scripting (XSS),medium,assigned,王五,wangwu@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.084289,
+15,INC-20260606-0015,[MEDIUM] Cross-Site Scripting (XSS) - 10.0.1.12,Cross-Site Scripting (XSS),medium,assigned,王五,wangwu@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.086074,
+16,INC-20260606-0016,[HIGH] Brute Force Login - 10.0.5.18,Brute Force Login,high,assigned,李四,lisi@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.087825,
+17,INC-20260606-0017,[CRITICAL] Data Exfiltration Attempt - 10.0.4.20,Data Exfiltration Attempt,critical,assigned,张三,zhangsan@company.com,,,,,2026-06-06 07:22:18,2026-06-06T15:22:18.089361,
+18,INC-20260606-0018,[MEDIUM] Cross-Site Scripting (XSS) - 10.0.3.24,Cross-Site Scripting (XSS),medium,resolved,张三,zhangsan@company.com,"10.0.1.10, 10.0.1.20","用户登录凭证, 部分数据库记录",1. 外部IP扫描端口 -> 2. 利用Web漏洞获取Shell -> 3. 提权至root -> 4. 横向移动至数据库服务器 -> 5. 数据窃取,"已封禁攻击源IP, 重置受影响账户密码, 修补Web漏洞, 部署WAF规则, 升级EDR检测策略",2026-06-06 07:22:18,2026-06-06T15:22:18.091651,2026-06-06T15:22:18.103789
+19,INC-20260606-0019,[MEDIUM] Unauthorized Access - 10.0.6.14,Unauthorized Access,medium,resolved,李四,lisi@company.com,"10.0.1.10, 10.0.1.20","用户登录凭证, 部分数据库记录",1. 外部IP扫描端口 -> 2. 利用Web漏洞获取Shell -> 3. 提权至root -> 4. 横向移动至数据库服务器 -> 5. 数据窃取,"已封禁攻击源IP, 重置受影响账户密码, 修补Web漏洞, 部署WAF规则, 升级EDR检测策略",2026-06-06 07:22:18,2026-06-06T15:22:18.093573,2026-06-06T15:22:18.101384
+20,INC-20260606-0020,[HIGH] Brute Force Login - 10.0.5.16,Brute Force Login,high,resolved,李四,lisi@company.com,"10.0.1.10, 10.0.1.20","用户登录凭证, 部分数据库记录",1. 外部IP扫描端口 -> 2. 利用Web漏洞获取Shell -> 3. 提权至root -> 4. 横向移动至数据库服务器 -> 5. 数据窃取,"已封禁攻击源IP, 重置受影响账户密码, 修补Web漏洞, 部署WAF规则, 升级EDR检测策略",2026-06-06 07:22:18,2026-06-06T15:22:18.095307,2026-06-06T15:22:18.099092

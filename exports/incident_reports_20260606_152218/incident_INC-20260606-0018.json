@@ -1,0 +1,166 @@
+{
+  "incident_no": "INC-20260606-0018",
+  "title": "[MEDIUM] Cross-Site Scripting (XSS) - 10.0.3.24",
+  "incident_type": "Cross-Site Scripting (XSS)",
+  "severity": "medium",
+  "analyst": "张三",
+  "status": "resolved",
+  "created_at": "2026-06-06 07:22:18",
+  "resolved_at": "2026-06-06T15:22:18.103789",
+  "description": "告警来源: MockIDS\n告警类型: Cross-Site Scripting (XSS)\n严重级别: medium\n源地址: 136.120.227.190\n目标: 10.0.3.24:3389\n告警时间: 2026-06-06T13:48:18.053378\n原始载荷: attack_payload_6119",
+  "affected_assets": "10.0.1.10, 10.0.1.20",
+  "affected_data": "用户登录凭证, 部分数据库记录",
+  "attack_chain": "1. 外部IP扫描端口 -> 2. 利用Web漏洞获取Shell -> 3. 提权至root -> 4. 横向移动至数据库服务器 -> 5. 数据窃取",
+  "mitigation": "已封禁攻击源IP, 重置受影响账户密码, 修补Web漏洞, 部署WAF规则, 升级EDR检测策略",
+  "alerts": [
+    {
+      "id": 18,
+      "alert_source": "MockIDS",
+      "alert_type": "Cross-Site Scripting (XSS)",
+      "severity": "medium",
+      "source_ip": "136.120.227.190",
+      "destination_ip": "10.0.3.24",
+      "destination_port": 3389,
+      "payload": "attack_payload_6119",
+      "alert_time": "2026-06-06T13:48:18.053378",
+      "is_false_positive": 0,
+      "false_positive_count": 0,
+      "incident_id": 18,
+      "created_at": "2026-06-06 07:22:18"
+    }
+  ],
+  "login_logs": [
+    {
+      "id": 8,
+      "username": "postgres",
+      "source_ip": "136.120.227.190",
+      "target_ip": "10.0.3.24",
+      "login_time": "2026-06-06T13:46:29.053378",
+      "success": 0,
+      "raw_log": "SSH login from 136.120.227.190 to 10.0.3.24"
+    },
+    {
+      "id": 7,
+      "username": "root",
+      "source_ip": "136.120.227.190",
+      "target_ip": "10.0.3.24",
+      "login_time": "2026-06-06T13:49:22.053378",
+      "success": 0,
+      "raw_log": "SSH login from 136.120.227.190 to 10.0.3.24"
+    },
+    {
+      "id": 5,
+      "username": "admin",
+      "source_ip": "136.120.227.190",
+      "target_ip": "10.0.3.24",
+      "login_time": "2026-06-06T13:50:50.053378",
+      "success": 0,
+      "raw_log": "SSH login from 136.120.227.190 to 10.0.3.24"
+    },
+    {
+      "id": 6,
+      "username": "postgres",
+      "source_ip": "136.120.227.190",
+      "target_ip": "10.0.3.24",
+      "login_time": "2026-06-06T13:52:03.053378",
+      "success": 0,
+      "raw_log": "SSH login from 136.120.227.190 to 10.0.3.24"
+    }
+  ],
+  "network_flows": [
+    {
+      "id": 6,
+      "source_ip": "136.120.227.190",
+      "source_port": 38739,
+      "destination_ip": "10.0.3.24",
+      "destination_port": 3389,
+      "protocol": "UDP",
+      "bytes_sent": 53205,
+      "bytes_received": 38776,
+      "flow_time": "2026-06-06T13:43:24.053378",
+      "raw_flow": "NetFlow 136.120.227.190 -> 10.0.3.24"
+    },
+    {
+      "id": 4,
+      "source_ip": "136.120.227.190",
+      "source_port": 5612,
+      "destination_ip": "10.0.3.24",
+      "destination_port": 3389,
+      "protocol": "UDP",
+      "bytes_sent": 30197,
+      "bytes_received": 17608,
+      "flow_time": "2026-06-06T13:44:58.053378",
+      "raw_flow": "NetFlow 136.120.227.190 -> 10.0.3.24"
+    },
+    {
+      "id": 5,
+      "source_ip": "136.120.227.190",
+      "source_port": 62775,
+      "destination_ip": "10.0.3.24",
+      "destination_port": 3389,
+      "protocol": "TCP",
+      "bytes_sent": 41747,
+      "bytes_received": 60564,
+      "flow_time": "2026-06-06T13:48:08.053378",
+      "raw_flow": "NetFlow 136.120.227.190 -> 10.0.3.24"
+    },
+    {
+      "id": 8,
+      "source_ip": "136.120.227.190",
+      "source_port": 55018,
+      "destination_ip": "10.0.3.24",
+      "destination_port": 3389,
+      "protocol": "UDP",
+      "bytes_sent": 3701,
+      "bytes_received": 28409,
+      "flow_time": "2026-06-06T13:49:37.053378",
+      "raw_flow": "NetFlow 136.120.227.190 -> 10.0.3.24"
+    },
+    {
+      "id": 7,
+      "source_ip": "136.120.227.190",
+      "source_port": 9213,
+      "destination_ip": "10.0.3.24",
+      "destination_port": 3389,
+      "protocol": "UDP",
+      "bytes_sent": 36156,
+      "bytes_received": 54238,
+      "flow_time": "2026-06-06T13:52:00.053378",
+      "raw_flow": "NetFlow 136.120.227.190 -> 10.0.3.24"
+    }
+  ],
+  "file_changes": [
+    {
+      "id": 3,
+      "host_ip": "10.0.3.24",
+      "file_path": "/var/www/html/shell.php",
+      "action": "delete",
+      "change_time": "2026-06-06T13:48:27.053378",
+      "file_hash": "sha256:439130145190258915490616648925171521710263470357315901555381116",
+      "raw_record": "File change on 10.0.3.24"
+    }
+  ],
+  "extracted_iocs": [
+    {
+      "id": 31,
+      "ioc_type": "ip",
+      "ioc_value": "136.120.227.190",
+      "source": "incident-INC-20260606-0018",
+      "description": "Cross-Site Scripting (XSS) 攻击源IP",
+      "added_by": "张三",
+      "added_at": "2026-06-06 07:22:18",
+      "incident_id": 18
+    },
+    {
+      "id": 32,
+      "ioc_type": "payload",
+      "ioc_value": "attack_payload_6119",
+      "source": "incident-INC-20260606-0018",
+      "description": "Cross-Site Scripting (XSS) 恶意载荷特征",
+      "added_by": "张三",
+      "added_at": "2026-06-06 07:22:18",
+      "incident_id": 18
+    }
+  ],
+  "generated_at": "2026-06-06T15:22:18.108617"
+}

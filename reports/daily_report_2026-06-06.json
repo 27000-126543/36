@@ -1,0 +1,103 @@
+{
+  "report_date": "2026-06-06",
+  "metrics": {
+    "vuln_fix_rate": 0.0,
+    "avg_response_time": 0.0,
+    "false_positive_rate": 0.0,
+    "new_vulns": 0,
+    "resolved_vulns": 0,
+    "new_incidents": 0,
+    "resolved_incidents": 0
+  },
+  "vuln_trend": [
+    {
+      "label": "05-31",
+      "value": 0
+    },
+    {
+      "label": "06-01",
+      "value": 0
+    },
+    {
+      "label": "06-02",
+      "value": 0
+    },
+    {
+      "label": "06-03",
+      "value": 0
+    },
+    {
+      "label": "06-04",
+      "value": 0
+    },
+    {
+      "label": "06-05",
+      "value": 151
+    },
+    {
+      "label": "06-06",
+      "value": 0
+    }
+  ],
+  "incident_trend": [
+    {
+      "label": "05-31",
+      "value": 0
+    },
+    {
+      "label": "06-01",
+      "value": 0
+    },
+    {
+      "label": "06-02",
+      "value": 0
+    },
+    {
+      "label": "06-03",
+      "value": 0
+    },
+    {
+      "label": "06-04",
+      "value": 0
+    },
+    {
+      "label": "06-05",
+      "value": 20
+    },
+    {
+      "label": "06-06",
+      "value": 0
+    }
+  ],
+  "fp_trend": [
+    {
+      "label": "05-31",
+      "value": 0.0
+    },
+    {
+      "label": "06-01",
+      "value": 0.0
+    },
+    {
+      "label": "06-02",
+      "value": 0.0
+    },
+    {
+      "label": "06-03",
+      "value": 0.0
+    },
+    {
+      "label": "06-04",
+      "value": 0.0
+    },
+    {
+      "label": "06-05",
+      "value": 0.0
+    },
+    {
+      "label": "06-06",
+      "value": 0.0
+    }
+  ],
+  "generated_at": "2026-06-06T15:22:18.127507"
+}
