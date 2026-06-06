@@ -116,10 +116,42 @@ def calculate_trend_metrics(end_date, days=7):
     return trend
 
 
-def _plot_trend_matplotlib(trend_data, output_path, title, value_key, y_label, color="#3498db"):
+def _setup_matplotlib_cjk_font():
     try:
         import matplotlib
         matplotlib.use("Agg")
+        from matplotlib import font_manager
+        candidate_fonts = [
+            "/System/Library/Fonts/PingFang.ttc",
+            "/System/Library/Fonts/STHeiti Medium.ttc",
+            "/System/Library/Fonts/STHeiti Light.ttc",
+            "/System/Library/Fonts/Songti.ttc",
+            "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+            "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+            "C:\\Windows\\Fonts\\msyh.ttc",
+            "C:\\Windows\\Fonts\\simhei.ttf",
+        ]
+        found = None
+        for fp in candidate_fonts:
+            if os.path.exists(fp):
+                try:
+                    font_manager.fontManager.addfont(fp)
+                    found = os.path.splitext(os.path.basename(fp))[0]
+                    break
+                except Exception:
+                    pass
+        matplotlib.rcParams["font.sans-serif"] = [
+            found or "PingFang SC", "Heiti SC", "Microsoft YaHei",
+            "SimHei", "WenQuanYi Micro Hei", "Arial Unicode MS", "DejaVu Sans"
+        ]
+        matplotlib.rcParams["axes.unicode_minus"] = False
+    except Exception:
+        pass
+
+
+def _plot_trend_matplotlib(trend_data, output_path, title, value_key, y_label, color="#3498db"):
+    try:
+        _setup_matplotlib_cjk_font()
         import matplotlib.pyplot as plt
     except Exception:
         return None
@@ -143,8 +175,7 @@ def _plot_trend_matplotlib(trend_data, output_path, title, value_key, y_label, c
 
 def _plot_line_matplotlib(trend_data, output_path, title, value_key, y_label, color="#e74c3c"):
     try:
-        import matplotlib
-        matplotlib.use("Agg")
+        _setup_matplotlib_cjk_font()
         import matplotlib.pyplot as plt
     except Exception:
         return None
@@ -256,7 +287,15 @@ def generate_pdf_report(report_date=None):
                    f"生成 {date_str} 安全运营日报: {pdf_path}",
                    target_type="report", result=f"path={pdf_path}")
     _push_report_to_stakeholders(pdf_path, date_str)
-    return pdf_path
+    return {
+        "report_date": date_str,
+        "metrics": today_metrics,
+        "trend": trend,
+        "pdf_path": pdf_path,
+        "html_path": html_path,
+        "json_path": json_path,
+        "generated_at": datetime.now().isoformat(),
+    }
 
 
 def _generate_html_report(report_date, metrics, trend, v_chart, i_chart, f_chart, r_chart):

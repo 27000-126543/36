@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企业级安全事件自动化响应与漏洞闭环管理系统</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+       background: #f5f7fa; color: #2c3e50; }
+.header { background: linear-gradient(135deg, #1a2a6c, #2c3e50, #1a2a6c);
+          color: white; padding: 20px 30px; display: flex;
+          justify-content: space-between; align-items: center; }
+.header h1 { font-size: 22px; font-weight: 600; }
+.header .subtitle { font-size: 13px; opacity: 0.8; margin-top: 4px; }
+.container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: 16px; margin-bottom: 24px; }
+.stat-card { background: white; border-radius: 10px; padding: 20px;
+             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+             border-left: 4px solid #3498db; }
+.stat-card.critical { border-left-color: #e74c3c; }
+.stat-card.warning { border-left-color: #f39c12; }
+.stat-card.success { border-left-color: #27ae60; }
+.stat-card h3 { font-size: 13px; color: #7f8c8d; margin-bottom: 8px;
+                font-weight: 500; }
+.stat-card .num { font-size: 32px; font-weight: 700; color: #2c3e50; }
+.stat-card .num.critical { color: #e74c3c; }
+.panel { background: white; border-radius: 10px; padding: 24px;
+         box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 24px; }
+.panel h2 { font-size: 17px; margin-bottom: 18px; color: #2c3e50;
+            padding-bottom: 10px; border-bottom: 2px solid #ecf0f1; }
+.search-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+               gap: 14px; align-items: end; }
+.form-group label { display: block; font-size: 12px; color: #7f8c8d;
+                    margin-bottom: 6px; font-weight: 500; }
+.form-group input, .form-group select {
+    width: 100%; padding: 9px 12px; border: 1px solid #dfe4ea; border-radius: 6px;
+    font-size: 14px; transition: all 0.2s;
+}
+.form-group input:focus, .form-group select:focus {
+    outline: none; border-color: #3498db; box-shadow: 0 0 0 3px rgba(52,152,219,0.15);
+}
+.btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn { padding: 9px 20px; border: none; border-radius: 6px; cursor: pointer;
+       font-size: 14px; font-weight: 500; transition: all 0.2s; text-decoration: none;
+       display: inline-flex; align-items: center; gap: 6px; }
+.btn-primary { background: #3498db; color: white; }
+.btn-primary:hover { background: #2980b9; }
+.btn-success { background: #27ae60; color: white; }
+.btn-success:hover { background: #219a52; }
+.btn-warning { background: #f39c12; color: white; }
+.btn-warning:hover { background: #d68910; }
+.btn-danger { background: #e74c3c; color: white; }
+.btn-danger:hover { background: #c0392b; }
+.btn-secondary { background: #95a5a6; color: white; }
+.btn-secondary:hover { background: #7f8c8d; }
+.tabs { display: flex; gap: 0; border-bottom: 2px solid #ecf0f1; margin-bottom: 18px; }
+.tab { padding: 10px 20px; cursor: pointer; font-size: 14px;
+       color: #7f8c8d; border-bottom: 2px solid transparent; margin-bottom: -2px;
+       transition: all 0.2s; font-weight: 500; }
+.tab:hover { color: #3498db; }
+.tab.active { color: #3498db; border-bottom-color: #3498db; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+table th, table td { padding: 10px 12px; text-align: left;
+                     border-bottom: 1px solid #ecf0f1; }
+table th { background: #f8f9fa; font-weight: 600; color: #2c3e50;
+           font-size: 12px; text-transform: uppercase; letter-spacing: 0.3px; }
+table tbody tr:hover { background: #f8f9fa; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px;
+         font-size: 11px; font-weight: 600; }
+.badge-critical { background: #fdecea; color: #e74c3c; }
+.badge-high { background: #fdedec; color: #c0392b; }
+.badge-medium { background: #fef5e7; color: #d68910; }
+.badge-low { background: #eafaf1; color: #27ae60; }
+.badge-urgent { background: #fdecea; color: #e74c3c; }
+.badge-pending { background: #fef9e7; color: #d68910; }
+.badge-progress { background: #ebf5fb; color: #2980b9; }
+.badge-completed { background: #eafaf1; color: #27ae60; }
+.badge-resolved { background: #eafaf1; color: #27ae60; }
+.badge-open { background: #fdedec; color: #e74c3c; }
+.pagination { display: flex; justify-content: center; margin-top: 16px; gap: 6px; }
+.pagination button { padding: 6px 12px; border: 1px solid #dfe4ea; background: white;
+                     border-radius: 4px; cursor: pointer; font-size: 13px; }
+.pagination button:hover { background: #f8f9fa; }
+.empty { text-align: center; padding: 40px; color: #95a5a6; font-size: 14px; }
+.loading { text-align: center; padding: 30px; color: #7f8c8d; }
+.spinner { display: inline-block; width: 20px; height: 20px;
+           border: 2px solid #f3f3f3; border-top: 2px solid #3498db;
+           border-radius: 50%; animation: spin 0.8s linear infinite;
+           vertical-align: middle; margin-right: 8px; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>🛡️ 企业级安全事件自动化响应与漏洞闭环管理系统</h1>
+    <div class="subtitle">Security Operations Center · v2.0</div>
+  </div>
+  <div class="btn-row">
+    <a href="/export/tickets.csv" class="btn btn-success">📊 导出工单</a>
+    <a href="/export/incidents.csv" class="btn btn-warning">📋 导出事件</a>
+    <a href="/export/incidents_reports.zip" class="btn btn-primary">📦 导出报告包</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="stats" id="stats">
+    <div class="stat-card"><h3>资产总数</h3>
+      <div class="num" id="s-assets">--</div></div>
+    <div class="stat-card critical"><h3>高危漏洞(待修复)</h3>
+      <div class="num critical" id="s-vulns-critical">--</div></div>
+    <div class="stat-card warning"><h3>待处理工单</h3>
+      <div class="num" id="s-tickets">--</div></div>
+    <div class="stat-card critical"><h3>未处置安全事件</h3>
+      <div class="num critical" id="s-incidents">--</div></div>
+    <div class="stat-card success"><h3>IOC黑名单条目</h3>
+      <div class="num" id="s-iocs">--</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>🔍 组合查询</h2>
+    <div class="search-form">
+      <div class="form-group">
+        <label>资产 IP</label>
+        <input type="text" id="q-ip" placeholder="例如: 10.0.1.10">
+      </div>
+      <div class="form-group">
+        <label>漏洞编号 (CVE)</label>
+        <input type="text" id="q-cve" placeholder="例如: CVE-2024-1234">
+      </div>
+      <div class="form-group">
+        <label>事件类型</label>
+        <select id="q-type">
+          <option value="">全部</option>
+          <option value="ticket">工单</option>
+          <option value="alert">告警</option>
+          <option value="incident">安全事件</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>开始时间</label>
+        <input type="datetime-local" id="q-start">
+      </div>
+      <div class="form-group">
+        <label>结束时间</label>
+        <input type="datetime-local" id="q-end">
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="doSearch()">🔍 查询</button>
+        <button class="btn btn-secondary" onclick="resetSearch()">重置</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="tabs">
+      <div class="tab active" data-tab="vulnerabilities">漏洞列表</div>
+      <div class="tab" data-tab="tickets">工单列表</div>
+      <div class="tab" data-tab="incidents">安全事件</div>
+      <div class="tab" data-tab="alerts">IDS告警</div>
+      <div class="tab" data-tab="assets">资产</div>
+      <div class="tab" data-tab="iocs">IOC黑名单</div>
+    </div>
+
+    <div id="tab-vulnerabilities" class="tab-content active"></div>
+    <div id="tab-tickets" class="tab-content"></div>
+    <div id="tab-incidents" class="tab-content"></div>
+    <div id="tab-alerts" class="tab-content"></div>
+    <div id="tab-assets" class="tab-content"></div>
+    <div id="tab-iocs" class="tab-content"></div>
+  </div>
+
+</div>
+
+<script>
+let currentTab = 'vulnerabilities';
+let searchParams = {};
+
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    currentTab = t.dataset.tab;
+    document.getElementById('tab-' + currentTab).classList.add('active');
+    loadTab(currentTab);
+  });
+});
+
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  return await r.json();
+}
+
+async function loadDashboard() {
+  const s = await fetchJSON('/api/dashboard');
+  document.getElementById('s-assets').textContent = s.assets;
+  document.getElementById('s-vulns-critical').textContent = s.vulns_critical;
+  document.getElementById('s-tickets').textContent = s.tickets_pending;
+  document.getElementById('s-incidents').textContent = s.incidents_open;
+  document.getElementById('s-iocs').textContent = s.iocs;
+}
+
+function badgeRisk(level) {
+  const m = {critical: 'badge-critical', high: 'badge-high',
+             medium: 'badge-medium', low: 'badge-low'};
+  return `<span class="badge ${m[level] || 'badge-medium'}">${level || 'N/A'}</span>`;
+}
+function badgePriority(p) {
+  const m = {urgent: 'badge-urgent', high: 'badge-high',
+             medium: 'badge-medium', low: 'badge-low'};
+  return `<span class="badge ${m[p] || 'badge-medium'}">${p || 'N/A'}</span>`;
+}
+function badgeStatus(s) {
+  const m = {open: 'badge-open', pending: 'badge-pending',
+             'in_progress': 'badge-progress', completed: 'badge-completed',
+             resolved: 'badge-resolved', assigned: 'badge-progress',
+             active: 'badge-resolved'};
+  return `<span class="badge ${m[s] || 'badge-medium'}">${s || 'N/A'}</span>`;
+}
+function esc(s) {
+  if (s === null || s === undefined) return '';
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderTable(cols, rows, emptyMsg='暂无数据') {
+  if (!rows || rows.length === 0) {
+    return `<div class="empty">${emptyMsg}</div>`;
+  }
+  let html = '<div style="overflow-x:auto;"><table><thead><tr>';
+  cols.forEach(c => html += `<th>${c.label}</th>`);
+  html += '</tr></thead><tbody>';
+  rows.forEach(r => {
+    html += '<tr>';
+    cols.forEach(c => {
+      const val = typeof c.render === 'function' ? c.render(r) : esc(r[c.key]);
+      html += `<td>${val}</td>`;
+    });
+    html += '</tr>';
+  });
+  html += '</tbody></table></div>';
+  return html;
+}
+
+async function loadTab(tab) {
+  const el = document.getElementById('tab-' + tab);
+  el.innerHTML = '<div class="loading"><span class="spinner"></span>加载中...</div>';
+  const qp = new URLSearchParams();
+  if (searchParams.ip) qp.set('asset_ip', searchParams.ip);
+  if (searchParams.cve) qp.set('cve_id', searchParams.cve);
+  if (searchParams.start) qp.set('start_time', searchParams.start);
+  if (searchParams.end) qp.set('end_time', searchParams.end);
+  const qs = qp.toString();
+
+  try {
+    if (tab === 'vulnerabilities') {
+      const data = await fetchJSON('/api/vulnerabilities?' + qs);
+      el.innerHTML = renderTable([
+        {label: 'ID', key: 'id'},
+        {label: 'CVE', key: 'cve_id', render: r => `<b>${esc(r.cve_id || '-')}</b>`},
+        {label: '资产IP', key: 'ip'},
+        {label: '风险等级', key: 'risk_level', render: r => badgeRisk(r.risk_level)},
+        {label: '风险评分', key: 'risk_score'},
+        {label: 'CVSS', key: 'cvss_score'},
+        {label: '状态', key: 'status', render: r => badgeStatus(r.status)},
+        {label: '标题', key: 'title', render: r => esc((r.title || '').slice(0, 50))},
+      ], data.data);
+    } else if (tab === 'tickets') {
+      const data = await fetchJSON('/api/tickets?' + qs);
+      el.innerHTML = renderTable([
+        {label: 'ID', key: 'id', render: r => `#${r.id}`},
+        {label: '优先级', key: 'priority', render: r => badgePriority(r.priority)},
+        {label: '状态', key: 'status', render: r => badgeStatus(r.status)},
+        {label: '资产IP', key: 'ip'},
+        {label: '部门', key: 'department'},
+        {label: '处理人', key: 'assignee'},
+        {label: '催办次数', key: 'reminder_count'},
+        {label: '创建时间', key: 'created_at', render: r => esc((r.created_at || '').slice(0, 16))},
+        {label: '标题', key: 'title', render: r => esc((r.title || '').slice(0, 40))},
+      ], data.data);
+    } else if (tab === 'incidents') {
+      let url = '/api/incidents?limit=100';
+      if (searchParams.type && searchParams.type !== 'incident') {
+        // filter via combined search
+        const c = await fetchJSON('/api/search?' + qs);
+        el.innerHTML = renderTable([
+          {label: '事件编号', key: 'incident_no'},
+          {label: '严重级别', key: 'severity', render: r => badgeRisk(r.severity)},
+          {label: '状态', key: 'status', render: r => badgeStatus(r.status)},
+          {label: '分析师', key: 'analyst'},
+          {label: '创建时间', key: 'created_at', render: r => esc((r.created_at || '').slice(0, 16))},
+          {label: '标题', key: 'title', render: r => esc((r.title || '').slice(0, 50))},
+        ], c.incidents || []);
+        return;
+      }
+      const data = await fetchJSON(url + '&' + qs);
+      el.innerHTML = renderTable([
+        {label: '事件编号', key: 'incident_no'},
+        {label: '类型', key: 'incident_type'},
+        {label: '严重级别', key: 'severity', render: r => badgeRisk(r.severity)},
+        {label: '状态', key: 'status', render: r => badgeStatus(r.status)},
+        {label: '分析师', key: 'analyst'},
+        {label: '创建时间', key: 'created_at', render: r => esc((r.created_at || '').slice(0, 16))},
+        {label: '标题', key: 'title', render: r => esc((r.title || '').slice(0, 50))},
+      ], data.data);
+    } else if (tab === 'alerts') {
+      const data = await fetchJSON('/api/alerts?limit=100&' + qs);
+      el.innerHTML = renderTable([
+        {label: 'ID', key: 'id'},
+        {label: '类型', key: 'alert_type'},
+        {label: '严重级别', key: 'severity', render: r => badgeRisk(r.severity)},
+        {label: '源IP', key: 'source_ip'},
+        {label: '目标IP', key: 'destination_ip'},
+        {label: '端口', key: 'destination_port'},
+        {label: '误报', key: 'is_false_positive', render: r => r.is_false_positive ? '✅' : '❌'},
+        {label: '告警时间', key: 'alert_time', render: r => esc((r.alert_time || '').slice(0, 16))},
+      ], data.data);
+    } else if (tab === 'assets') {
+      const data = await fetchJSON('/api/assets?limit=200&' + qs);
+      el.innerHTML = renderTable([
+        {label: 'ID', key: 'id'},
+        {label: 'IP', key: 'ip', render: r => `<b>${esc(r.ip)}</b>`},
+        {label: '主机名', key: 'hostname'},
+        {label: '操作系统', key: 'os'},
+        {label: '部门', key: 'department'},
+        {label: '负责人', key: 'asset_owner'},
+        {label: '资产价值', key: 'asset_value'},
+        {label: '状态', key: 'status', render: r => badgeStatus(r.status)},
+      ], data.data);
+    } else if (tab === 'iocs') {
+      const data = await fetchJSON('/api/iocs?limit=500');
+      el.innerHTML = renderTable([
+        {label: 'ID', key: 'id'},
+        {label: 'IOC类型', key: 'ioc_type'},
+        {label: 'IOC值', key: 'ioc_value', render: r => `<code>${esc(r.ioc_value)}</code>`},
+        {label: '来源', key: 'source'},
+        {label: '描述', key: 'description', render: r => esc((r.description || '').slice(0, 50))},
+        {label: '添加时间', key: 'added_at', render: r => esc((r.added_at || '').slice(0, 16))},
+      ], data.data);
+    }
+  } catch (e) {
+    el.innerHTML = `<div class="empty" style="color:#e74c3c;">加载失败: ${esc(e.message)}</div>`;
+  }
+}
+
+function doSearch() {
+  searchParams = {
+    ip: document.getElementById('q-ip').value.trim() || null,
+    cve: document.getElementById('q-cve').value.trim() || null,
+    type: document.getElementById('q-type').value || null,
+    start: document.getElementById('q-start').value ? document.getElementById('q-start').value.replace('T', ' ') + ':00' : null,
+    end: document.getElementById('q-end').value ? document.getElementById('q-end').value.replace('T', ' ') + ':00' : null,
+  };
+  loadTab(currentTab);
+}
+
+function resetSearch() {
+  ['q-ip','q-cve','q-start','q-end'].forEach(i => document.getElementById(i).value = '');
+  document.getElementById('q-type').value = '';
+  searchParams = {};
+  loadTab(currentTab);
+}
+
+loadDashboard();
+loadTab(currentTab);
+setInterval(loadDashboard, 30000);
+</script>
+
+</body>
+</html>
